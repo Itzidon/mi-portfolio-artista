@@ -4,115 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Rivera | Artista y Portafolio Oficial</title>
-  <meta name="description" content="Descubre la trayectoria, el estilo y las próximas presentaciones de Alex Rivera en una landing page artística, accesible y optimizada para buscadores.">
+  <meta name="description" content="Portafolio oficial de Alex Rivera, artista contemporáneo. Descubre su trayectoria, estilo y próximas presentaciones.">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alex Rivera",
-    "jobTitle": "Artista",
-    "url": "https://itzidon.github.io/mi-portfolio-artista",
-    "email": "alexrivera@email.com",
-    "sameAs": [
-      "https://instagram.com/alexriveraart",
-      "https://youtube.com/@alexriveraart"
-    ]
-  }
-  </script>
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <header class="hero" id="inicio">
-    <nav class="nav" aria-label="Navegación principal">
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal del sitio">
       <div class="logo">Alex Rivera</div>
+
       <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#trayectoria">Trayectoria</a></li>
-        <li><a href="#presentaciones">Próximas presentaciones</a></li>
+        <li><a href="#presentaciones">Presentaciones</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-
-    <section class="hero-content" aria-labelledby="titulo-principal">
-      <h1 id="titulo-principal">Bienvenidos al universo artístico de Alex Rivera</h1>
-
-      <p>
-        Una propuesta creativa que mezcla emoción, identidad y presencia escénica.
-        Descubre su historia, su evolución y sus próximas presentaciones.
-      </p>
-
-      <!-- IMAGEN -->
-      <img 
-        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" 
-        alt="Retrato artístico de Alex Rivera" 
-        class="hero-image"
-        loading="lazy"
-      >
-
-      <a href="#presentaciones" class="btn" aria-label="Ir a la sección de próximas presentaciones">
-        Ver presentaciones
-      </a>
-    </section>
   </header>
 
-  <!-- MAIN -->
-  <main>
+  <main itemscope itemtype="https://schema.org/Person">
 
-    <section id="sobre-mi" class="section">
+    <section class="hero section" id="inicio" aria-labelledby="titulo-principal">
+      <div class="content-box hero-grid">
+
+        <div class="hero-text">
+          <p class="eyebrow">Portafolio artístico oficial</p>
+
+          <h1 id="titulo-principal" itemprop="name">Alex Rivera</h1>
+
+          <meta itemprop="jobTitle" content="Artista">
+          <meta itemprop="url" content="#">
+
+          <p class="lead" itemprop="description">
+            Artista contemporáneo que combina emoción, identidad y presencia escénica.
+            Explora su trayectoria, evolución y próximas presentaciones.
+          </p>
+
+          <a href="#presentaciones" class="btn">
+            Ver próximas presentaciones
+          </a>
+        </div>
+
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+            alt="Retrato artístico de Alex Rivera"
+            class="hero-image"
+            loading="lazy"
+            itemprop="image"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section" aria-labelledby="titulo-sobre-mi">
       <div class="content-box">
-        <h2>Sobre mí</h2>
+        <h2 id="titulo-sobre-mi">Sobre mí</h2>
         <p>
-          Alex Rivera es un artista apasionado por conectar con el público a través de una propuesta auténtica,
-          sensible y llena de personalidad. Su trabajo busca transmitir emociones reales y crear experiencias
-          memorables para cada persona que lo descubre.
+          Alex Rivera es un artista apasionado por conectar con el público a través de una propuesta auténtica, sensible y llena de personalidad.
+        </p>
+        <p>
+          Su trabajo busca transmitir emociones reales y crear experiencias memorables para cada persona que lo descubre.
         </p>
       </div>
     </section>
 
-    <section id="trayectoria" class="section alt">
+    <section id="trayectoria" class="section alt" aria-labelledby="titulo-trayectoria">
       <div class="content-box">
-        <h2>Trayectoria</h2>
+        <h2 id="titulo-trayectoria">Trayectoria</h2>
         <p>
-          A lo largo de su recorrido, Alex Rivera ha participado en espacios culturales, eventos en directo
-          y presentaciones artísticas que le han permitido consolidar una identidad propia. Cada escenario ha
-          sido una oportunidad para crecer, evolucionar y seguir compartiendo su visión con nuevas audiencias.
+          A lo largo de su recorrido, Alex Rivera ha participado en espacios culturales, eventos en directo y presentaciones artísticas.
+        </p>
+        <p>
+          Cada escenario ha sido una oportunidad para crecer, evolucionar y seguir compartiendo su visión con nuevas audiencias.
         </p>
       </div>
     </section>
 
-    <section id="presentaciones" class="section">
+    <section id="presentaciones" class="section" aria-labelledby="titulo-presentaciones">
       <div class="content-box">
-        <h2>Próximas presentaciones</h2>
-        <ul aria-label="Lista de próximas presentaciones">
-          <li>Madrid — 15 de mayo de 2026</li>
-          <li>Bilbao — 2 de junio de 2026</li>
-          <li>Barcelona — 20 de junio de 2026</li>
+        <h2 id="titulo-presentaciones">Próximas presentaciones</h2>
+
+        <ul class="events-list">
+          <li><strong>Madrid</strong> — 15 de mayo de 2026</li>
+          <li><strong>Bilbao</strong> — 2 de junio de 2026</li>
+          <li><strong>Barcelona</strong> — 20 de junio de 2026</li>
         </ul>
       </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="section alt">
+    <section id="contacto" class="section alt" aria-labelledby="titulo-contacto">
       <div class="content-box">
-        <h2>Contacto</h2>
+        <h2 id="titulo-contacto">Contacto</h2>
+
         <p>
-          Para colaboraciones, eventos o propuestas artísticas puedes escribir a:
-          <strong>alexrivera@email.com</strong>
+          Puedes escribir a:
+          <a href="mailto:alexrivera@email.com" itemprop="email" class="contact-link">
+            alexrivera@email.com
+          </a>
         </p>
+
+        <div class="social-links" aria-label="Redes sociales de Alex Rivera">
+          <a
+            href="https://instagram.com/alexriveraart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Perfil de Instagram de Alex Rivera (se abre en una pestaña nueva)"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://youtube.com/@alexriveraart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Canal de YouTube de Alex Rivera (se abre en una pestaña nueva)"
+          >
+            YouTube
+          </a>
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2026 Alex Rivera. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 </html>
+    
