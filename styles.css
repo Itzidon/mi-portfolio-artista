@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+/* IMPORTANTE: para que el header sticky no tape el contenido */
+section {
+  scroll-margin-top: 100px;
+}
+
 /* HEADER */
 .site-header {
   position: sticky;
